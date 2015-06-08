@@ -56,7 +56,7 @@ int firstMissingPositive(int* nums, int numsSize) {
         }
     }
     
-    /* if there are some miss numbers, the missed position is not match(no matter it is -1 or bigger than numsSize, it will be moved to missed position) */
+    /* if there are some missing numbers, the missing position is not match(no matter it is -1 or bigger than numsSize, it will be moved to missing position) */
     for (int i = 0; i < numsSize; i++) {
         if (nums[i] != i + 1) return i + 1;
     }
